@@ -1,8 +1,8 @@
 from extract import extract_data
 from transform import clean_data
 from load import load_to_db
+RAW_PATH = "data/raw/meteorite-landings.csv"
 
-RAW_PATH = "data/raw/meteorite.csv"
 
 def run_pipeline():
     df = extract_data(RAW_PATH)
